@@ -1,0 +1,169 @@
+@import url('https://font.googleapi.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.con{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: url('WP/Cback.jpg');
+	background-size: cover;
+}
+
+.con .content{
+	max-width: 800px;
+	text-align: center;
+}
+
+.con .content h2{
+	font-size: 36px;
+	font-weight: 500;
+	color: white;
+}
+
+.con .content p{
+	font-weight: 300;
+	color: white;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.container .coninfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container .coninfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+
+.container .coninfo .box .icon{
+	min-width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+.conform{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+
+.conform h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+
+.conform .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.conform .inputBox input, 
+.conform .inputBox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+
+.conform .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #777;
+}
+
+.conform .inputBox input:focus ~ span,
+.conform .inputBox input:valid ~ span,
+.conform .inputBox textarea:focus ~ span,
+.conform .inputBox textarea:valid ~ span{
+	color: #e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
+.conform .inputBox input[type="submit"]{
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+/*
+ICONE RESEAUX SOCIAUX
+*/
+.fa-instagram {
+	color: transparent;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+.fa-facebook {
+	color: #0069ff;
+}
+.fa-twitter {
+	color: #4bc6f7;
+}
+/*
+ICONE RESEAUX SOCIAUX
+*/
+
+/*
+FENETRE RESPONSIVE
+*/
+@media (max-width: 991px){
+	.contact{
+		padding: 50px;
+	}
+	.container{
+		flex-direction: column;
+	}
+	.container .coninfo{
+		margin-bottom: 40px;
+	}
+	.container .coninfo, .conform{
+		width: 100%;
+	}
+}
+
+/* 
+FENETRE RESPONSIVE 
+*/
